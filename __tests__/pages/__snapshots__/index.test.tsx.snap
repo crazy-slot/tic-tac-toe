@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing pages Index should print Index page 1`] = `
+<div>
+  <main>
+    tic-tac-toe
+  </main>
+</div>
+`;

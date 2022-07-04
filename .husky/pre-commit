@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+yarn yarn-deduplicate --list --fail
+yarn compile
+yarn check-unused-exports
+yarn lint-staged
+
+# Just for info
+yarn audit

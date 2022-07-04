@@ -1,0 +1,10 @@
+import {{pascalCase name}} from '~{{lowerCase type}}/{{camelCase name}}';
+import testProvider from '~utils/TestHelper';
+
+describe('Testing {{lowerCase type}} {{pascalCase name}}', () => {
+	it('should print {{pascalCase name}} component', () => {
+		const { container } = testProvider(<{{pascalCase name}} />);
+
+		expect(container).toMatchSnapshot();
+	});
+});

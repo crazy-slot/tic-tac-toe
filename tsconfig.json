@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "downlevelIteration": true,
+    "baseUrl": "src",
+		"paths": {
+			"~atoms/*": ["components/atoms/*"],
+			"~organisms/*": ["components/organisms/*"],
+			"~molecules/*": ["components/molecules/*"],
+			"~templates/*": ["components/templates/*"],
+			"~config/*": ["config/*"],
+			"~pages/*": ["pages/*"],
+			"~store/*": ["store/*"],
+			"~styles/*": ["styles/*"],
+			"~types/*": ["types/*"],
+			"~utils/*": ["utils/*"]
+		},
+		"strictNullChecks": true
+	},
+	"include": ["next-env.d.ts", "env.d.ts", "**/*.d.ts", "**/*.js", "**/*.json", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
